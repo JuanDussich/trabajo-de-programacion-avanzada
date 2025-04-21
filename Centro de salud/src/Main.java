@@ -7,6 +7,7 @@ public class Main {
 
 
         JOptionPane.showMessageDialog(null,"hola soy juan");
+        String nombre = "";
 
 
     }
