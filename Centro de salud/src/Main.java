@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        JOptionPane.showMessageDialog(null,"hola soy juan en juan xd");
+        JOptionPane.showMessageDialog(null,"hola soy juan en main");
 
     }
 }
