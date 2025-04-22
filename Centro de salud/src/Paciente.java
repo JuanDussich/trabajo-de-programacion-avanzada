@@ -1,2 +1,7 @@
-public class Paciente {
+public class Paciente extends Usuario{
+
+    //ATRIBUTOS
+    // CONSTRUCTOR
+    // METODOS
+    // GETTERS Y SETTERS
 }
