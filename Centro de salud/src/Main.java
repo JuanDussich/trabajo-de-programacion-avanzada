@@ -6,14 +6,18 @@ public class Main  {
     public static void main(String[] args) {
 
 
+        Administrador admin = new Administrador();
+        Paciente paciente = new Paciente();
+        Medico medico = new Medico();
         int opcion;
         do{
             opcion = JOptionPane.showOptionDialog(null, "menu", "menu principal", JOptionPane.DEFAULT_OPTION, 0,  null,OpcionMain.values(), OpcionMain.values());
             switch (opcion){
                 case 0:
-
+                    admin.MenuAdministrador();
                     break;
                 case 1:
+
                     break;
                 case 2:
 
