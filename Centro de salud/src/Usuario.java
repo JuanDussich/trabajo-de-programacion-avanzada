@@ -3,7 +3,6 @@ public class Usuario {
     //ATRIBUTOS
     private String Nombre;
     private String Apellido;
-    private int edad;
     private String contrasenia;
     private String mail;
 
@@ -11,16 +10,15 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nombre,String apellido, int edad,String mail, String contrasenia) {
+    public Usuario(String nombre,String apellido,String mail, String contrasenia) {
         this.Nombre = nombre;
         this.Apellido = apellido;
-        this.edad = edad;
         this.mail = mail;
         this.contrasenia = contrasenia;
     }
 
     // METODOS
-    
+
     // GETTERS Y SETTERS
     public String getNombre() {
         return Nombre;
@@ -36,14 +34,6 @@ public class Usuario {
 
     public void setApellido(String apellido) {
         Apellido = apellido;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public String getContrasenia() {
@@ -64,7 +54,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "Nombre='" + Nombre + '\'' + ", Apellido='" + Apellido + '\'' + ", edad=" + edad + ", contrasenia='" + contrasenia + '\'' + ", mail='" + mail + '\'' +
+        return "Usuario{" + "Nombre='" + Nombre + '\'' + ", Apellido='" + Apellido + '\'' + ", contrasenia='" + contrasenia + '\'' + ", mail='" + mail + '\'' +
                 '}';
     }
 }
