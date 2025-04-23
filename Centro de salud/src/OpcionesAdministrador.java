@@ -1,2 +1,3 @@
-public class OpcionesAdministrador {
+public enum OpcionesAdministrador {
+
 }
