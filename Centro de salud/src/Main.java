@@ -5,7 +5,7 @@ import javax.swing.*;
 public class Main  {
     public static void main(String[] args) {
 
-
+        JOptionPane.showMessageDialog(null,"este es el centro de salud");
         Administrador admin = new Administrador();
         Paciente paciente = new Paciente();
         Medico medico = new Medico();
