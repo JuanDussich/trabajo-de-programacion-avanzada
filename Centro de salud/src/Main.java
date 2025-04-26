@@ -11,13 +11,13 @@ public class Main  {
         Medico medico = new Medico();
         int opcion;
         do{
-            opcion = JOptionPane.showOptionDialog(null, "menu", "menu principal", JOptionPane.DEFAULT_OPTION, 0,  null,OpcionMain.values(), OpcionMain.values());
+            opcion = JOptionPane.showOptionDialog(null, "Bienvenido", "Centro de Salud", JOptionPane.DEFAULT_OPTION, 0,  null,OpcionMain.values(), OpcionMain.values());
             switch (opcion){
                 case 0:
                     admin.MenuAdministrador();
                     break;
                 case 1:
-
+                    paciente.MenuPaciente();
                     break;
                 case 2:
 
