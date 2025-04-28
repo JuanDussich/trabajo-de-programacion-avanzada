@@ -1,2 +1,3 @@
-public enum OpcionesPaciente {
+public enum OpcionesPaciente { 
+  SolicitarTurno,VerTurnosProgramados,VerHistorialMedico,Salir
 }
