@@ -20,7 +20,7 @@ public class Main  {
                     paciente.MenuPaciente();
                     break;
                 case 2:
-
+                    medico.MenuMedico();
                     break;
                 case 3:
                     JOptionPane.showMessageDialog(null, "a bueno adios master");
