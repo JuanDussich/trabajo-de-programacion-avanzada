@@ -77,11 +77,6 @@ public class Medico extends Usuario{
 
     @Override
     public String toString() {
-        return super.toString() +
-                "\nMédico {" +
-                "\n  Matrícula: '" + matricula + '\'' +
-                "\n  Especialidad: '" + especialidad + '\'' +
-                "\n  Cantidad de Consultas: " + cantidadConsultas +
-                "\n}";
+        return super.toString() + "\nMédico {" + "\n  Matrícula: '" + matricula + '\'' + "\n  Especialidad: '" + especialidad + '\'' + "\n  Cantidad de Consultas: " + cantidadConsultas + "\n}";
     }
 }
