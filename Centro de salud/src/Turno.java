@@ -5,7 +5,6 @@ import java.time.LocalTime;
 public class Turno{
 
     //ATRIBUTOS
-    private int idTurno;
     private String motivoTurno;
     private LocalDate fechaTurno;
     private LocalTime horaTurno;
@@ -13,8 +12,7 @@ public class Turno{
     // CONSTRUCTOR
     public Turno() {
     }
-    public Turno(int idTurno,String motivoTurno,LocalDate fechaTurno, LocalTime horaTurno) {
-        this.idTurno = idTurno;
+    public Turno(String motivoTurno,LocalDate fechaTurno, LocalTime horaTurno) {
         this.motivoTurno = motivoTurno;
         this.fechaTurno = fechaTurno;
         this.horaTurno = horaTurno;
@@ -46,14 +44,6 @@ public class Turno{
     }
 
     // GETTERS Y SETTERS
-    //idTurno
-    public int getIdTurno() {
-        return idTurno;
-    }
-
-    public void setIdTurno(int idTurno) {
-        this.idTurno = idTurno;
-    }
 
     //motivoTruno
     public String getMotivoTurno() {
@@ -80,5 +70,10 @@ public class Turno{
 
     public void setHoraTurno(LocalTime horaTurno) {
         this.horaTurno = horaTurno;
+    }
+
+    @Override
+    public String toString() {
+        return "Turno{" + ", motivoTurno='" + motivoTurno + '\'' + ", fechaTurno=" + fechaTurno + ", horaTurno=" + horaTurno + '}';
     }
 }
