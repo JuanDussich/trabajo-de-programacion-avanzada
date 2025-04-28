@@ -26,14 +26,18 @@ public class Turno{
             switch (opcion){
                 case 0:
                     // VerTurnoPendiente
+                    JOptionPane.showMessageDialog(null,"aca se va a poder ver si el turno esta pendiente");
                     break;
                 case 1:
+                    JOptionPane.showMessageDialog(null,"aca se va a poder ver si el turno esta Confirmado");
                     // VerTurnoConfirmado
                     break;
                 case 2:
+                    JOptionPane.showMessageDialog(null,"aca se va a poder ver si el turno esta Cancelado");
                     // VerTurnoCancelado
                     break;
                 case 3:
+                    JOptionPane.showMessageDialog(null,"aca se va a poder ver si el turno esta Atendido");
                     //VerTurnoAtendido
                     break;
                 case 4:
