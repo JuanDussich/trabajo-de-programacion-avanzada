@@ -18,6 +18,11 @@ public class Usuario {
     }
 
     // METODOS
+    public void Login(){
+
+    }
+
+
 
     // GETTERS Y SETTERS
     public String getNombre() {
