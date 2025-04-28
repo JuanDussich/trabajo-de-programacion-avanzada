@@ -1,28 +1,35 @@
+
+import java.util.ArrayList;
+
 public class ListaMedico {
 
-	import java.util.ArrayList;
-
-	public class ListaMedico {
-	    private ArrayList<Medico> medicos;
-
-	    public ListaMedico() {
+	//ATRIBUTOS
+	private ArrayList<Medico> medicos;
+	// CONSTRUCTORES
+	public ListaMedico() {
 	        this.medicos = new ArrayList<>();
-	    }
-
-	    public void agregarMedico(Medico medico) {
+	}
+	// METODOS
+	public void agregarMedico(Medico medico) {
 	        medicos.add(medico);
-	    }
+	}
 
-	    public void eliminarMedico(Medico medico) {
+	public void eliminarMedico(Medico medico) {
 	        medicos.remove(medico);
-	    }
+	}
 
-	    public ArrayList<Medico> getMedicos() {
+	// GETTERS Y SETTERS
+	public ArrayList<Medico> getMedicos() {
 	        return medicos;
-	    }
+	}
 
-	    public void setMedicos(ArrayList<Medico> medicos) {
+	public void setMedicos(ArrayList<Medico> medicos) {
 	        this.medicos = medicos;
-	    }
+	}
+
+	@Override
+	public String toString() {
+		return "ListaMedico{" + "medicos=" + medicos + '}';
 	}
 }
+
