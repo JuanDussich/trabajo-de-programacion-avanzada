@@ -14,7 +14,7 @@ public class Paciente extends Usuario{
     public Paciente(String dni,LocalDate fechaNacimiento,HistoriaClinica historialClinica) {
         this.dni = dni;
         this.fechaNacimiento = fechaNacimiento;
-        this.historiaClinica = historiaClinica;
+        this.historiaClinica = historialClinica;
     }
     // METODOS
     public void MenuPaciente() {
