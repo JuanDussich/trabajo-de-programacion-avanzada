@@ -5,8 +5,8 @@ public class Administrador extends Usuario {
     //ATRIBUTOS
 
     // CONSTRUCTOR
-    public Administrador() {
-        super();
+    public Administrador(String nombre, String apellido, String mail, String contrasenia) {
+        super(nombre,apellido,mail,contrasenia);
 
     }
 

@@ -35,7 +35,7 @@ public class Paciente extends Usuario{
             opcion = JOptionPane.showOptionDialog(null, "menu", "Menu Paciente", JOptionPane.DEFAULT_OPTION, 0,  null,OpcionesPaciente.values(), OpcionesPaciente.values());
             switch (opcion){
                 case 0:
-                    // Ver datos personales
+                    // Ver datos personales se va a poder hacer el login y registro en esta parte
                     break;
                 case 1:
                     // Ver Medicos
