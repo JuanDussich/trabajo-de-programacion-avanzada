@@ -8,6 +8,7 @@ public class Medico extends Usuario{
 
     
     public Medico() {
+
     }
 
     // Validación 

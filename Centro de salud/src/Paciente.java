@@ -18,6 +18,16 @@ public class Paciente extends Usuario{
         this.historiaClinica = historialClinica;
     }
     // METODOS
+
+    @Override
+    public void Login() {
+        super.Login();
+    }
+    @Override
+    public void Registro() {
+        super.Registro();
+    }
+
     public void MenuPaciente() {
         int opcion;
         do{

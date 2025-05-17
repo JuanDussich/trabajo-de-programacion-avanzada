@@ -21,6 +21,9 @@ public class Usuario {
     public void Login(){
 
     }
+    public void Registro(){
+
+    }
 
 
 

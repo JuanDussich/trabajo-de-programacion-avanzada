@@ -11,6 +11,15 @@ public class Administrador extends Usuario {
     }
 
     // METODOS
+    @Override
+    public void Login() {
+        super.Login();
+    }
+    @Override
+    public void Registro() {
+        super.Registro();
+    }
+
     public void MenuAdministrador() {
         int opcion;
         do{
