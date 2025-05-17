@@ -11,6 +11,7 @@ public class Paciente extends Usuario{
     // CONSTRUCTOR
     public Paciente() {
     }
+    
     public Paciente(String nombre,String apellido,String mail,String contrasenia,String dni,LocalDate fechaNacimiento,HistoriaClinica historialClinica) {
         super(nombre,apellido,mail,contrasenia);
         this.dni = dni;
