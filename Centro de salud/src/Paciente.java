@@ -6,17 +6,16 @@ public class Paciente extends Usuario{
     //ATRIBUTOS
     private String dni;
     private  LocalDate fechaNacimiento;
-    private HistoriaClinica historiaClinica;
+//    private HistoriaClinica historiaClinica;
 
     // CONSTRUCTOR
     public Paciente() {
     }
     
-    public Paciente(String nombre,String apellido,String mail,String contrasenia,String dni,LocalDate fechaNacimiento,HistoriaClinica historialClinica) {
+    public Paciente(String nombre,String apellido,String dni,LocalDate fechaNacimiento,String mail,String contrasenia) {
         super(nombre,apellido,mail,contrasenia);
         this.dni = dni;
         this.fechaNacimiento = fechaNacimiento;
-        this.historiaClinica = historialClinica;
     }
     // METODOS
 
