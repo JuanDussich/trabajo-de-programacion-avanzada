@@ -1,9 +1,15 @@
 import javax.swing.*;
 
-public class Administrador {
+public class Administrador extends Usuario {
 
     //ATRIBUTOS
+
     // CONSTRUCTOR
+    public Administrador() {
+        super();
+
+    }
+
     // METODOS
     public void MenuAdministrador() {
         int opcion;

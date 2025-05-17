@@ -12,6 +12,7 @@ public class Paciente extends Usuario{
     public Paciente() {
     }
     public Paciente(String dni,LocalDate fechaNacimiento,HistoriaClinica historialClinica) {
+        super();
         this.dni = dni;
         this.fechaNacimiento = fechaNacimiento;
         this.historiaClinica = historialClinica;
