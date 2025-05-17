@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class Conexion {
     
     //ACA FALTA AGREGAR EL NOMBRE DE LA BASE DE DATOS
-    private static String URL ="jdbc:mysql://localhost:3306/";
+    private static String URL ="jdbc:mysql://localhost:3306/centro_de_salud";
     private static String USER = "root";
     private static String PASSWORD ="";
 
