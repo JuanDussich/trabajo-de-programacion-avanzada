@@ -68,23 +68,9 @@ public class Paciente extends Usuario{
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    // historiaClinica
-    public HistoriaClinica getHistoriaClinica() {
-        return historiaClinica;
-    }
-
-    public void setHistoriaClinica(HistoriaClinica historiaClinica) {
-        this.historiaClinica = historiaClinica;
-    }
 
     @Override
     public String toString() {
-        return super.toString() +
-                ", Paciente{" +
-                "DNI='" + dni + '\'' +
-                ", FechaNacimiento=" + fechaNacimiento +
-                ", HistoriaClinica=" + (historiaClinica != null ? historiaClinica.toString() : "Sin historia clínica") +
-                '}';
+        return "Paciente{" + "dni='" + dni + '\'' + ", fechaNacimiento=" + fechaNacimiento + "} " + super.toString();
     }
-
 }
