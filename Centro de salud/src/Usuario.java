@@ -4,16 +4,16 @@ public class Usuario {
     private String Nombre;
     private String Apellido;
     private String contrasenia;
-    private String mail;
+    private String email;
 
     // CONSTRUCTOR
     public Usuario() {
     }
 
-    public Usuario(String nombre,String apellido,String mail, String contrasenia) {
+    public Usuario(String nombre,String apellido,String email, String contrasenia) {
         this.Nombre = nombre;
         this.Apellido = apellido;
-        this.mail = mail;
+        this.email = email;
         this.contrasenia = contrasenia;
     }
 
@@ -52,17 +52,17 @@ public class Usuario {
         this.contrasenia = contrasenia;
     }
 
-    public String getMail() {
-        return mail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
+    public void setEmail(String mail) {
+        this.email = mail;
     }
 
     @Override
     public String toString() {
-        return "Usuario{" + "Nombre='" + Nombre + '\'' + ", Apellido='" + Apellido + '\'' + ", contrasenia='" + contrasenia + '\'' + ", mail='" + mail + '\'' +
+        return "Usuario{" + "Nombre='" + Nombre + '\'' + ", Apellido='" + Apellido + '\'' + ", contrasenia='" + contrasenia + '\'' + ", mail='" + email + '\'' +
                 '}';
     }
 }

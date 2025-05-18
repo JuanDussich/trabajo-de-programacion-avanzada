@@ -18,6 +18,9 @@ public class Administrador extends Usuario {
     public void Login() {
         super.Login();
     }
+    public void AgregarPaciente(){
+
+    }
     @Override
     public void Registro() {
         super.Registro();
