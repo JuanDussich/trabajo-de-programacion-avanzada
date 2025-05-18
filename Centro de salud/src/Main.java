@@ -8,6 +8,7 @@ public class Main  {
         Administrador admin = new Administrador();
         Paciente paciente = new Paciente();
         Medico medico = new Medico();
+
         int opcion;
         do{
             opcion = JOptionPane.showOptionDialog(null, "Bienvenido", "Centro de Salud", JOptionPane.DEFAULT_OPTION, 0,  null,OpcionMain.values(), OpcionMain.values());

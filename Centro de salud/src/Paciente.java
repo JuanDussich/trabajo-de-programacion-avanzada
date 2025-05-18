@@ -42,7 +42,7 @@ private static Connection con = Conexion.getInstance().getConnection();
 
 
     public static Paciente login(String email, String contrasenia) {
-        Paciente usuario = new Paciente();
+        Paciente paciente = new Paciente();
         try {
             PreparedStatement stmt = con.prepareStatement(
                     "SELECT * FROM paciente WHERE email = ? AND contrasenia = ?"
@@ -60,12 +60,12 @@ private static Connection con = Conexion.getInstance().getConnection();
                 int dni = rs.getInt("dni");
                 Date fechaNacimiento = rs.getDate("fecha_De_nacimiento");
 
-                usuario =  new Paciente(id,nombre,apellido,dni, fechaNacimiento, email,contrasenia);
+                paciente =  new Paciente(id,nombre,apellido,dni, fechaNacimiento, email,contrasenia);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return usuario;
+        return paciente;
     }
 
     public static void agregarUsuario(Paciente usuario) {
