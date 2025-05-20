@@ -1,8 +1,8 @@
 public class Usuario {
 
     //ATRIBUTOS
-    private String Nombre;
-    private String Apellido;
+    protected String Nombre;
+    protected String Apellido;
     private String contrasenia;
     private String email;
 

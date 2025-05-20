@@ -27,17 +27,38 @@ public class Paciente extends Usuario{
     }
     // METODOS
 
-//    @Override
-//    public void Login() {
-//        super.Login();
-//    }
+    @Override
+    public void Login() {
+        String email = JOptionPane.showInputDialog("ingresa tu mail");
+        String contrasenia = JOptionPane.showInputDialog("ingresa tu contrasenia");
+
+        try {
+            PreparedStatement stmt = con.prepareStatement(
+                    "SELECT * FROM paciente WHERE email = ? AND contrasenia = ?"
+            );
+            stmt.setString(1, email);
+            stmt.setString(2, contrasenia);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                this.id = rs.getInt("idPaciente");
+                String nombre = rs.getString("nombre");
+                String apellido = rs.getString("apellido");
+                this.dni = rs.getInt("dni");
+                this.fechaNacimiento = rs.getDate("fecha_De_nacimiento");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 //    public void AgregarPaciente(){
 //
 //    }
-//    @Override
-//    public void Registro() {
-//        super.Registro();
-//    }
+
+    @Override
+    public void Registro() {
+
+    }
 private static Connection con = Conexion.getInstance().getConnection();
 
 
@@ -166,6 +187,8 @@ private static Connection con = Conexion.getInstance().getConnection();
                             mail = JOptionPane.showInputDialog("ingresa tu mail para poder logearte");
                             contrasenia = JOptionPane.showInputDialog("ingresa tu contrasenia");
                             paciente = Paciente.login(mail,contrasenia);
+                            paciente.Login();
+                            JOptionPane.showMessageDialog(null,"hola");
                             break;
                         case 1:
                             Paciente.RegistrarUsuario();

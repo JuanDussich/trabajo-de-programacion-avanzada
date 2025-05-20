@@ -3,7 +3,7 @@ import javax.swing.*;
 public class Administrador extends Usuario {
 
     //ATRIBUTOS
-
+	private String nombre;
     // CONSTRUCTOR
     public Administrador() {
     }
@@ -16,14 +16,14 @@ public class Administrador extends Usuario {
     // METODOS
     @Override
     public void Login() {
-        super.Login();
+
     }
     public void AgregarPaciente(){
 
     }
     @Override
     public void Registro() {
-        super.Registro();
+
     }
 
     public void MenuAdministrador() {
